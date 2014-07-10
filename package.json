@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "width-scale"
   ],
   "css-width-scale": {
     "type": "git",
