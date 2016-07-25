@@ -1,0 +1,91 @@
+{
+  "name": "mrmrs/css-width-scale",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.9"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/AbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://www.npmjs.com/package/css-width-scale",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/mrmrs/css-width-scale",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/css-width-scale",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "css-width-scale",
+      "subhead": "CSS module with a responsive width scale",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "css-width-scale: CSS module with a responsive width scale",
+          "url": "https://www.npmjs.com/package/css-width-scale"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mrmrs",
+          "repo": "css-width-scale"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "html": "<h1 id=\"css-width-scale-0-0-6\">css-width-scale 0.0.6</h1>\n<p>Css module of single purpose classes for width scale</p>\n<h4 id=\"stats\">Stats</h4>\n<table>\n<thead>\n<tr>\n<th>286</th>\n<th>40</th>\n<th>40</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>bytes</td>\n<td>selectors</td>\n<td>declarations</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"installation\">Installation</h2>\n<h4 id=\"with-npm-https-npmjs-com-\">With <a href=\"https://npmjs.com\">npm</a></h4>\n<pre>npm install --<span class=\"hljs-built_in\">save</span>-dev css-<span class=\"hljs-built_in\">width</span>-<span class=\"hljs-built_in\">scale</span></pre><h4 id=\"with-git\">With Git</h4>\n<pre>git <span class=\"hljs-keyword\">clone</span> <span class=\"hljs-title\">https</span>://github.com/tachyons-css/css-width-scale</pre><h2 id=\"usage\">Usage</h2>\n<h4 id=\"using-with-postcss-https-github-com-postcss-postcss-\">Using with <a href=\"https://github.com/postcss/postcss\">PostCSS</a></h4>\n<p>Import the css module</p>\n<pre>@<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;css-width-scale&quot;</span>;</pre><p>Then process the CSS using the <a href=\"https://github.com/tachyons-css/tachyons-cli\"><code>tachyons-cli</code></a></p>\n<pre>$ npm i -g tachyons-cli\n$ tachyons-cli path/to/css-file.css &gt; dist/t.css</pre><h4 id=\"using-the-css\">Using the CSS</h4>\n<p>The built CSS is located in the <code>css</code> directory. It contains an unminified and minified version.\nYou can either cut and paste that css or link to it directly in your html.</p>\n<pre><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;path/to/module/css/css-width-scale&quot;</span>&gt;</span></pre><h4 id=\"development\">Development</h4>\n<p>The source CSS files can be found in the <code>src</code> directory.\nRunning <code>$ npm start</code> will process the source CSS and place the built CSS in the <code>css</code> directory.</p>\n<h2 id=\"the-css\">The CSS</h2>\n<pre><span class=\"hljs-comment\">/*\n   WIDTHS\n*/</span>\n<span class=\"hljs-comment\">/* Width Percentages */</span>\n<span class=\"hljs-selector-class\">.wi1</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">1rem</span>; }\n<span class=\"hljs-selector-class\">.wi2</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">2rem</span>; }\n<span class=\"hljs-selector-class\">.wi3</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">4rem</span>; }\n<span class=\"hljs-selector-class\">.wi4</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">8rem</span>; }\n<span class=\"hljs-selector-class\">.wi5</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">16rem</span>; }\n<span class=\"hljs-selector-class\">.wi6</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">32rem</span>; }\n<span class=\"hljs-selector-class\">.wi7</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">48rem</span>; }\n<span class=\"hljs-selector-class\">.wi8</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">64rem</span>; }\n<span class=\"hljs-selector-class\">.wi9</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">96rem</span>; }\n<span class=\"hljs-selector-class\">.wi10</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">128rem</span>; }\n@<span class=\"hljs-keyword\">media</span> screen and (min-width: <span class=\"hljs-number\">48em</span>) {\n <span class=\"hljs-selector-class\">.wi1-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">1rem</span>; }\n <span class=\"hljs-selector-class\">.wi2-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">2rem</span>; }\n <span class=\"hljs-selector-class\">.wi3-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">4rem</span>; }\n <span class=\"hljs-selector-class\">.wi4-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">8rem</span>; }\n <span class=\"hljs-selector-class\">.wi5-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">16rem</span>; }\n <span class=\"hljs-selector-class\">.wi6-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">32rem</span>; }\n <span class=\"hljs-selector-class\">.wi7-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">48rem</span>; }\n <span class=\"hljs-selector-class\">.wi8-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">64rem</span>; }\n <span class=\"hljs-selector-class\">.wi9-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">96rem</span>; }\n <span class=\"hljs-selector-class\">.wi10-ns</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">128rem</span>; }\n}\n@<span class=\"hljs-keyword\">media</span> screen and (min-width:<span class=\"hljs-number\">48em</span>) and (max-width: <span class=\"hljs-number\">64em</span>) {\n <span class=\"hljs-selector-class\">.wi1-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">1rem</span>; }\n <span class=\"hljs-selector-class\">.wi2-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">2rem</span>; }\n <span class=\"hljs-selector-class\">.wi3-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">4rem</span>; }\n <span class=\"hljs-selector-class\">.wi4-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">8rem</span>; }\n <span class=\"hljs-selector-class\">.wi5-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">16rem</span>; }\n <span class=\"hljs-selector-class\">.wi6-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">32rem</span>; }\n <span class=\"hljs-selector-class\">.wi7-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">48rem</span>; }\n <span class=\"hljs-selector-class\">.wi8-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">64rem</span>; }\n <span class=\"hljs-selector-class\">.wi9-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">96rem</span>; }\n <span class=\"hljs-selector-class\">.wi10-m</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">128rem</span>; }\n}\n@<span class=\"hljs-keyword\">media</span> screen and (min-width: <span class=\"hljs-number\">64em</span>) {\n <span class=\"hljs-selector-class\">.wi1-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">1rem</span>; }\n <span class=\"hljs-selector-class\">.wi2-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">2rem</span>; }\n <span class=\"hljs-selector-class\">.wi3-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">4rem</span>; }\n <span class=\"hljs-selector-class\">.wi4-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">8rem</span>; }\n <span class=\"hljs-selector-class\">.wi5-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">16rem</span>; }\n <span class=\"hljs-selector-class\">.wi6-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">32rem</span>; }\n <span class=\"hljs-selector-class\">.wi7-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">48rem</span>; }\n <span class=\"hljs-selector-class\">.wi8-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">64rem</span>; }\n <span class=\"hljs-selector-class\">.wi9-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">96rem</span>; }\n <span class=\"hljs-selector-class\">.wi10-l</span> { <span class=\"hljs-attribute\">width</span>: <span class=\"hljs-number\">128rem</span>; }\n}</pre><h2 id=\"contributing\">Contributing</h2>\n<ol>\n<li>Fork it</li>\n<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>\n<li>Commit your changes (<code>git commit -am &apos;Add some feature&apos;</code>)</li>\n<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>\n<li>Create new Pull Request</li>\n</ol>\n<h2 id=\"authors\">Authors</h2>\n<ul>\n<li><a href=\"http://mrmrs.io\">mrmrs</a></li>\n<li><a href=\"http://johnotander.com\">johno</a></li>\n</ul>\n<h2 id=\"license\">License</h2>\n<p>MIT</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mrmrs/css-width-scale",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mrmrs",
+          "text": "mrmrs"
+        }
+      ]
+    }
+  ]
+}
