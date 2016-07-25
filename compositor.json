@@ -54,8 +54,8 @@
     },
     {
       "component": "header",
-      "heading": "css-width-scale",
-      "subhead": "CSS module with a responsive width scale",
+      "heading": "responsive width scale",
+      "subhead": "A CSS module",
       "children": [
         {
           "component": "ui/TweetButton",
