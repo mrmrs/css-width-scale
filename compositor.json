@@ -63,7 +63,7 @@
           "url": "https://www.npmjs.com/package/css-width-scale"
         },
         {
-          "component": "ui/GithubButton",
+          "component": "ui/GithubButto",
           "user": "mrmrs",
           "repo": "css-width-scale"
         }
