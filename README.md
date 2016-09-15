@@ -1,10 +1,10 @@
-# css-width-scale 0.0.6
+# css-width-scale 1.0.3
 
 Css module of single purpose classes for width scale
 
 #### Stats
 
-286 | 40 | 40
+290 | 40 | 40
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-width-scale
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-width-scale
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-width-scale.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-width-scale";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-width-scale@1.0.2/css/css-width-scale.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,12 +68,13 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
+/* Media Queries */
 /*
    WIDTHS
 */
@@ -70,7 +89,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .wi8 { width: 64rem; }
 .wi9 { width: 96rem; }
 .wi10 { width: 128rem; }
-@media screen and (min-width: 48em) {
+@media (min-width: 48em) {
  .wi1-ns { width: 1rem; }
  .wi2-ns { width: 2rem; }
  .wi3-ns { width: 4rem; }
@@ -82,7 +101,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .wi9-ns { width: 96rem; }
  .wi10-ns { width: 128rem; }
 }
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (min-width: 48em) and (max-width: 64em) {
  .wi1-m { width: 1rem; }
  .wi2-m { width: 2rem; }
  .wi3-m { width: 4rem; }
@@ -94,7 +113,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .wi9-m { width: 96rem; }
  .wi10-m { width: 128rem; }
 }
-@media screen and (min-width: 64em) {
+@media  (min-width: 64em) {
  .wi1-l { width: 1rem; }
  .wi2-l { width: 2rem; }
  .wi3-l { width: 4rem; }
@@ -123,5 +142,5 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 
 ## License
 
-MIT
+ISC
 
