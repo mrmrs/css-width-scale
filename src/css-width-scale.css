@@ -1,3 +1,9 @@
+/* Media Queries */
+
+@custom-media --breakpoint-not-small (min-width: 48em);
+@custom-media --breakpoint-medium (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large (min-width: 64em);
+
 /*
    WIDTHS
 */
@@ -15,7 +21,7 @@
 .wi9 {  width: 96rem; }
 .wi10 { width: 128rem; }
 
-@media screen and (min-width: 48em) {
+@media (--breakpoint-not-small) {
   .wi1-ns {  width: 1rem; }
   .wi2-ns {  width: 2rem; }
   .wi3-ns {  width: 4rem; }
@@ -28,7 +34,7 @@
   .wi10-ns { width: 128rem; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (--breakpoint-medium) {
   .wi1-m {      width: 1rem; }
   .wi2-m {      width: 2rem; }
   .wi3-m {      width: 4rem; }
@@ -41,7 +47,7 @@
   .wi10-m {     width: 128rem; }
 }
 
-@media screen and (min-width: 64em) {
+@media  (--breakpoint-large)  {
   .wi1-l {      width: 1rem; }
   .wi2-l {      width: 2rem; }
   .wi3-l {      width: 4rem; }

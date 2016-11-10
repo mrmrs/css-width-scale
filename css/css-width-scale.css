@@ -1,3 +1,4 @@
+/* Media Queries */
 /*
    WIDTHS
 */
@@ -12,7 +13,7 @@
 .wi8 { width: 64rem; }
 .wi9 { width: 96rem; }
 .wi10 { width: 128rem; }
-@media screen and (min-width: 48em) {
+@media (min-width: 48em) {
  .wi1-ns { width: 1rem; }
  .wi2-ns { width: 2rem; }
  .wi3-ns { width: 4rem; }
@@ -24,7 +25,7 @@
  .wi9-ns { width: 96rem; }
  .wi10-ns { width: 128rem; }
 }
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (min-width: 48em) and (max-width: 64em) {
  .wi1-m { width: 1rem; }
  .wi2-m { width: 2rem; }
  .wi3-m { width: 4rem; }
@@ -36,7 +37,7 @@
  .wi9-m { width: 96rem; }
  .wi10-m { width: 128rem; }
 }
-@media screen and (min-width: 64em) {
+@media  (min-width: 64em) {
  .wi1-l { width: 1rem; }
  .wi2-l { width: 2rem; }
  .wi3-l { width: 4rem; }
