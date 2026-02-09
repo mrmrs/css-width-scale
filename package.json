@@ -1,38 +1,44 @@
 {
   "name": "css-width-scale",
-  "style": "width-scale.css",
-  "version": "1.0.4",
-  "homepage": "http://github.com/mrmrs/css-width-scale",
-  "description": "Css module of single purpose classes for width scale",
+  "version": "2.0.0",
+  "description": "Functional CSS for width-scale",
+  "style": "dist/width-scale.css",
+  "main": "dist/width-scale.css",
+  "exports": {
+    ".": "./dist/width-scale.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "width-scale"
+    "width-scale",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-width-scale": {
+  "homepage": "https://github.com/mrmrs/css-width-scale",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-width-scale.git"
+    "url": "https://github.com/mrmrs/css-width-scale.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-width-scale/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-width-scale/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
