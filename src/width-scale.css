@@ -15,7 +15,7 @@
 .wi9 {  width: 96rem; }
 .wi10 { width: 128rem; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .wi1-s {  width: 1rem; }
   .wi2-s {  width: 2rem; }
   .wi3-s {  width: 4rem; }
@@ -28,7 +28,7 @@
   .wi10-s { width: 128rem; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .wi1-m {      width: 1rem; }
   .wi2-m {      width: 2rem; }
   .wi3-m {      width: 4rem; }
@@ -41,7 +41,7 @@
   .wi10-m {     width: 128rem; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .wi1-l {      width: 1rem; }
   .wi2-l {      width: 2rem; }
   .wi3-l {      width: 4rem; }
