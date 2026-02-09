@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-width-scale.css');
+const srcFile = path.join(__dirname, 'src', 'width-scale.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-width-scale.css',
+  filename: 'width-scale.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-width-scale.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'width-scale.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-width-scale.css',
+  filename: 'width-scale.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-width-scale.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'width-scale.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-width-scale.css     ${unminified.length} bytes`);
-console.log(`  dist/css-width-scale.min.css ${minified.length} bytes`);
+console.log(`  dist/width-scale.css     ${unminified.length} bytes`);
+console.log(`  dist/width-scale.min.css ${minified.length} bytes`);
