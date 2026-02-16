@@ -1,127 +1,116 @@
-# css-width-scale 0.0.6
+# css-width-scale
 
-Css module of single purpose classes for width scale
+Functional CSS for width-scale
 
-#### Stats
+## Filesize
 
-286 | 40 | 40
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/width-scale.css` | 1577 bytes |
+| `dist/width-scale.min.css` | 915 bytes (240 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-width-scale
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-width-scale
+```sh
+npm install css-width-scale
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-width-scale";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-width-scale">
+<link rel="stylesheet" href="https://unpkg.com/css-width-scale/dist/width-scale.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   WIDTHS
-*/
-/* Width Percentages */
-.wi1 { width: 1rem; }
-.wi2 { width: 2rem; }
-.wi3 { width: 4rem; }
-.wi4 { width: 8rem; }
-.wi5 { width: 16rem; }
-.wi6 { width: 32rem; }
-.wi7 { width: 48rem; }
-.wi8 { width: 64rem; }
-.wi9 { width: 96rem; }
-.wi10 { width: 128rem; }
-@media screen and (min-width: 48em) {
- .wi1-ns { width: 1rem; }
- .wi2-ns { width: 2rem; }
- .wi3-ns { width: 4rem; }
- .wi4-ns { width: 8rem; }
- .wi5-ns { width: 16rem; }
- .wi6-ns { width: 32rem; }
- .wi7-ns { width: 48rem; }
- .wi8-ns { width: 64rem; }
- .wi9-ns { width: 96rem; }
- .wi10-ns { width: 128rem; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .wi1-m { width: 1rem; }
- .wi2-m { width: 2rem; }
- .wi3-m { width: 4rem; }
- .wi4-m { width: 8rem; }
- .wi5-m { width: 16rem; }
- .wi6-m { width: 32rem; }
- .wi7-m { width: 48rem; }
- .wi8-m { width: 64rem; }
- .wi9-m { width: 96rem; }
- .wi10-m { width: 128rem; }
-}
-@media screen and (min-width: 64em) {
- .wi1-l { width: 1rem; }
- .wi2-l { width: 2rem; }
- .wi3-l { width: 4rem; }
- .wi4-l { width: 8rem; }
- .wi5-l { width: 16rem; }
- .wi6-l { width: 32rem; }
- .wi7-l { width: 48rem; }
- .wi8-l { width: 64rem; }
- .wi9-l { width: 96rem; }
- .wi10-l { width: 128rem; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-width-scale/dist/width-scale.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.w1` | `width: 1px;` |
+| `.w2` | `width: 2px;` |
+| `.w3` | `width: 4px;` |
+| `.w4` | `width: 8px;` |
+| `.w5` | `width: 16px;` |
+| `.w6` | `width: 32px;` |
+| `.w7` | `width: 64px;` |
+| `.w8` | `width: 128px;` |
+| `.w9` | `width: 256px;` |
+| `.w10` | `width: 512px;` |
+| `.w11` | `width: 1024px;` |
+| `.w12` | `width: 2048px;` |
+| `.w1-s` | `width: 1px;` |
+| `.w2-s` | `width: 2px;` |
+| `.w3-s` | `width: 4px;` |
+| `.w4-s` | `width: 8px;` |
+| `.w5-s` | `width: 16px;` |
+| `.w6-s` | `width: 32px;` |
+| `.w7-s` | `width: 64px;` |
+| `.w8-s` | `width: 128px;` |
+| `.w9-s` | `width: 256px;` |
+| `.w10-s` | `width: 512px;` |
+| `.w11-s` | `width: 1024px;` |
+| `.w12-s` | `width: 2048px;` |
+| `.w1-m` | `width: 1px;` |
+| `.w2-m` | `width: 2px;` |
+| `.w3-m` | `width: 4px;` |
+| `.w4-m` | `width: 8px;` |
+| `.w5-m` | `width: 16px;` |
+| `.w6-m` | `width: 32px;` |
+| `.w7-m` | `width: 64px;` |
+| `.w8-m` | `width: 128px;` |
+| `.w9-m` | `width: 256px;` |
+| `.w10-m` | `width: 512px;` |
+| `.w11-m` | `width: 1024px;` |
+| `.w12-m` | `width: 2048px;` |
+| `.w1-l` | `width: 1px;` |
+| `.w2-l` | `width: 2px;` |
+| `.w3-l` | `width: 4px;` |
+| `.w4-l` | `width: 8px;` |
+| `.w5-l` | `width: 16px;` |
+| `.w6-l` | `width: 32px;` |
+| `.w7-l` | `width: 64px;` |
+| `.w8-l` | `width: 128px;` |
+| `.w9-l` | `width: 256px;` |
+| `.w10-l` | `width: 512px;` |
+| `.w11-l` | `width: 1024px;` |
+| `.w12-l` | `width: 2048px;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.w1-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/width-scale.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/width-scale.css` — formatted
+- `dist/width-scale.min.css` — minified
 
 ## License
 
 MIT
-
