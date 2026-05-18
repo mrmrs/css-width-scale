@@ -6,8 +6,8 @@ Functional CSS for width-scale
 
 | File | Size |
 |------|------|
-| `dist/width-scale.css` | 1577 bytes |
-| `dist/width-scale.min.css` | 915 bytes (240 Gzipped) |
+| `dist/width-scale.css` | 1385 bytes |
+| `dist/width-scale.min.css` | 831 bytes (212 Gzipped) |
 
 ## Install
 
@@ -39,54 +39,46 @@ npm install css-width-scale
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.w1` | `width: 1px;` |
-| `.w2` | `width: 2px;` |
-| `.w3` | `width: 4px;` |
-| `.w4` | `width: 8px;` |
-| `.w5` | `width: 16px;` |
-| `.w6` | `width: 32px;` |
-| `.w7` | `width: 64px;` |
-| `.w8` | `width: 128px;` |
-| `.w9` | `width: 256px;` |
-| `.w10` | `width: 512px;` |
-| `.w11` | `width: 1024px;` |
-| `.w12` | `width: 2048px;` |
-| `.w1-s` | `width: 1px;` |
-| `.w2-s` | `width: 2px;` |
-| `.w3-s` | `width: 4px;` |
-| `.w4-s` | `width: 8px;` |
-| `.w5-s` | `width: 16px;` |
-| `.w6-s` | `width: 32px;` |
-| `.w7-s` | `width: 64px;` |
-| `.w8-s` | `width: 128px;` |
-| `.w9-s` | `width: 256px;` |
-| `.w10-s` | `width: 512px;` |
-| `.w11-s` | `width: 1024px;` |
-| `.w12-s` | `width: 2048px;` |
-| `.w1-m` | `width: 1px;` |
-| `.w2-m` | `width: 2px;` |
-| `.w3-m` | `width: 4px;` |
-| `.w4-m` | `width: 8px;` |
-| `.w5-m` | `width: 16px;` |
-| `.w6-m` | `width: 32px;` |
-| `.w7-m` | `width: 64px;` |
-| `.w8-m` | `width: 128px;` |
-| `.w9-m` | `width: 256px;` |
-| `.w10-m` | `width: 512px;` |
-| `.w11-m` | `width: 1024px;` |
-| `.w12-m` | `width: 2048px;` |
-| `.w1-l` | `width: 1px;` |
-| `.w2-l` | `width: 2px;` |
-| `.w3-l` | `width: 4px;` |
-| `.w4-l` | `width: 8px;` |
-| `.w5-l` | `width: 16px;` |
-| `.w6-l` | `width: 32px;` |
-| `.w7-l` | `width: 64px;` |
-| `.w8-l` | `width: 128px;` |
-| `.w9-l` | `width: 256px;` |
-| `.w10-l` | `width: 512px;` |
-| `.w11-l` | `width: 1024px;` |
-| `.w12-l` | `width: 2048px;` |
+| `.wi1` | `width: 1rem;` |
+| `.wi2` | `width: 2rem;` |
+| `.wi3` | `width: 4rem;` |
+| `.wi4` | `width: 8rem;` |
+| `.wi5` | `width: 16rem;` |
+| `.wi6` | `width: 32rem;` |
+| `.wi7` | `width: 48rem;` |
+| `.wi8` | `width: 64rem;` |
+| `.wi9` | `width: 96rem;` |
+| `.wi10` | `width: 128rem;` |
+| `.wi1-s` | `width: 1rem;` |
+| `.wi2-s` | `width: 2rem;` |
+| `.wi3-s` | `width: 4rem;` |
+| `.wi4-s` | `width: 8rem;` |
+| `.wi5-s` | `width: 16rem;` |
+| `.wi6-s` | `width: 32rem;` |
+| `.wi7-s` | `width: 48rem;` |
+| `.wi8-s` | `width: 64rem;` |
+| `.wi9-s` | `width: 96rem;` |
+| `.wi10-s` | `width: 128rem;` |
+| `.wi1-m` | `width: 1rem;` |
+| `.wi2-m` | `width: 2rem;` |
+| `.wi3-m` | `width: 4rem;` |
+| `.wi4-m` | `width: 8rem;` |
+| `.wi5-m` | `width: 16rem;` |
+| `.wi6-m` | `width: 32rem;` |
+| `.wi7-m` | `width: 48rem;` |
+| `.wi8-m` | `width: 64rem;` |
+| `.wi9-m` | `width: 96rem;` |
+| `.wi10-m` | `width: 128rem;` |
+| `.wi1-l` | `width: 1rem;` |
+| `.wi2-l` | `width: 2rem;` |
+| `.wi3-l` | `width: 4rem;` |
+| `.wi4-l` | `width: 8rem;` |
+| `.wi5-l` | `width: 16rem;` |
+| `.wi6-l` | `width: 32rem;` |
+| `.wi7-l` | `width: 48rem;` |
+| `.wi8-l` | `width: 64rem;` |
+| `.wi9-l` | `width: 96rem;` |
+| `.wi10-l` | `width: 128rem;` |
 
 ### Responsive
 
@@ -98,7 +90,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.w1-m` applies the property at the medium breakpoint and above.
+Example: `.wi1-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
